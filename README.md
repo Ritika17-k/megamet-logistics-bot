@@ -44,8 +44,7 @@ data/ops_supplied/      real data lives here on the server (NOT in git) -- see *
 data/processed/         bot state and logs (NOT in git)
 deploy/                 systemd service, optional ngrok service, VM setup script
 tests/smoke_test.py     end-to-end test with sample data, no WhatsApp needed
-docs/PROJECT_HISTORY.md how the project got here
-```
+
 ## Data files (on the server, not in git)
 
 | File | What | Example |
