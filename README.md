@@ -45,16 +45,4 @@ data/processed/         bot state and logs (NOT in git)
 deploy/                 systemd service, optional ngrok service, VM setup script
 tests/smoke_test.py     end-to-end test with sample data, no WhatsApp needed
 
-## Data files (on the server, not in git)
 
-| File | What | Example |
-|---|---|---|
-| `data/ops_supplied/TRANSPORTER_LIST.xlsx` | The transporter sheet ops maintain | `TRANSPORTER_LIST.example.xlsx` |
-| `data/ops_supplied/ops_team.csv` | Ops people, phone, regions they handle | `ops_team.example.csv` |
-| `data/ops_supplied/admins.txt` | Extra numbers allowed to manage transporters | `admins.example.txt` |
-| `data/ops_supplied/trial_group.txt` | Who gets alerts in test mode | `trial_group.example.txt` |
-| `data/ops_supplied/added_transporters.csv` | Written by "add transporter" on WhatsApp | `added_transporters.example.csv` |
-
-Transporter sheet columns: **Sr No · Transporter / Name · Mobile No · Vehicle · From · Destination ·
-Warehouse / Port**. Extra lines under a transporter can hold a second number or more destinations.
-Write "(New)" after a name to mark new transporters.
