@@ -58,4 +58,4 @@ docs/PROJECT_HISTORY.md how the project got here
 
 Transporter sheet columns: **Sr No · Transporter / Name · Mobile No · Vehicle · From · Destination ·
 Warehouse / Port**. Extra lines under a transporter can hold a second number or more destinations.
-Write "(New)" after a name to mark new transporters. Details in the docstring of `app/transporter_list.py`.
+Write "(New)" after a name to mark new transporters.
