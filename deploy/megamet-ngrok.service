@@ -1,0 +1,14 @@
+[Unit]
+Description=ngrok tunnel for the Megamet webhook (same static domain as before)
+After=megamet-webhook.service
+Requires=megamet-webhook.service
+
+[Service]
+User=__USER__
+EnvironmentFile=__APP_DIR__/.env
+ExecStart=/usr/bin/env ngrok http --url=${NGROK_DOMAIN} 8000 --log=stdout
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

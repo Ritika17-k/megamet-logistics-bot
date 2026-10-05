@@ -1,0 +1,12 @@
+pandas>=2.0
+openpyxl>=3.1
+
+# Phase 2 -- WhatsApp integration
+fastapi>=0.110
+uvicorn[standard]>=0.29
+requests>=2.31
+python-dotenv>=1.0
+
+# Transporter-side translation (translation.py)
+deep-translator>=1.11
+langdetect>=1.0.9

@@ -1,0 +1,16 @@
+[Unit]
+Description=Megamet logistics WhatsApp webhook (FastAPI)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+User=__USER__
+WorkingDirectory=__APP_DIR__/app
+EnvironmentFile=__APP_DIR__/.env
+ExecStart=__APP_DIR__/.venv/bin/uvicorn webhook:app --host 127.0.0.1 --port 8000 --workers 1
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
